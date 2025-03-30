@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-18T12:24:25.882451" rpa="false" schemaversion="5">
+<suite id="s1" name="uK" source="C:\Users\USER\Downloads\CSI403\AutomateTest\uK.robot">
+<test id="s1-t1" name="TO GO TO Uknowme WEB" line="19">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T12:24:26.176962" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/login'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T12:24:26.176755" elapsed="2.378989"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T12:24:28.556132" elapsed="0.026798"/>
+</kw>
+<kw name="Login Admin">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T12:24:28.584378" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[2]/div[1]/div/button[1]'.</msg>
+<arg>xpath=//*[@id="root"]/div/div[2]/div[1]/div/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T12:24:28.584040" elapsed="0.116233"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T12:24:28.700617" level="INFO">Typing text 'AtitayaAdmin@gmail.com' into text field 'email'.</msg>
+<arg>email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T12:24:28.700423" elapsed="0.136141"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-03-18T12:24:28.836957" level="INFO">Typing password into text field 'password'.</msg>
+<msg time="2025-03-18T12:24:28.868902" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T12:24:28.836741" elapsed="0.068332"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T12:24:28.905370" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[2]/div[1]/form/button'.</msg>
+<arg>xpath=//*[@id="root"]/div/div[2]/div[1]/form/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T12:24:28.905219" elapsed="0.043900"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T12:24:28.949447" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/div[6]/button[1]'.</msg>
+<msg time="2025-03-18T12:24:29.099867" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-18T12:24:29.100006" level="FAIL">Button with locator 'xpath=/html/body/div[2]/div/div[6]/button[1]' not found.</msg>
+<arg>xpath=/html/body/div[2]/div/div[6]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-18T12:24:28.949282" elapsed="0.153081">Button with locator 'xpath=/html/body/div[2]/div/div[6]/button[1]' not found.</status>
+</kw>
+<status status="FAIL" start="2025-03-18T12:24:28.583595" elapsed="0.518906">Button with locator 'xpath=/html/body/div[2]/div/div[6]/button[1]' not found.</status>
+</kw>
+<status status="FAIL" start="2025-03-18T12:24:26.176050" elapsed="2.926903">Button with locator 'xpath=/html/body/div[2]/div/div[6]/button[1]' not found.</status>
+</test>
+<doc>Go to SPU Website by Web Browser.</doc>
+<status status="FAIL" start="2025-03-18T12:24:25.883964" elapsed="3.220278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="uK" id="s1" pass="0" fail="1" skip="0">uK</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
